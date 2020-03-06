@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Dialog</title>
+    <link rel="stylesheet" href="css/dialog.css" />
+    <script src="javascript/dialog.js"></script>
+
+</head>
+<body>
+    <div id="commonDialogCenterpoint" >
+        <div id="commonDialog">
+            <div id="commonDialogTitle" class="dialog-title"></div>
+            <div id="commonDialogMessage"  class="dialog-message"></div>
+            <div class="dialog-buttons">
+                <button id="commonDialogOK">OK</button>
+                <button id="commonDialogCancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="dialgo-overlay"></div>
+
+    <script>
+
+        innovaDialog.show({
+            title: 'innovaJS - Dialog',
+            message: ['Your messages here.', 'Multi lines...'],
+            width: 150,
+            height: 100,
+            left: 0,
+            top: 0,
+            okCallBack: function(){ alert('callback for Ok Buton'); },
+            cancelCallBack: function(){ alert('callback for Cancel Buton'); }
+        });
+
+    </script>
+</body>
+</html>
