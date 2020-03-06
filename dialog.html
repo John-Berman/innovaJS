@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Custom Dialog</title>
     <link rel="stylesheet" href="css/dialog.css" />
-    <script src="javascript/dialog.js"></script>
-
 </head>
 <body>
     <div id="commonDialogCenterpoint" >
@@ -21,20 +19,19 @@
         </div>
     </div>
     <div class="dialgo-overlay"></div>
+    <script src="javascript/dialog.js"></script>
 
     <script>
-
         innovaDialog.show({
             title: 'innovaJS - Dialog',
             message: ['Your messages here.', 'Multi lines...'],
-            width: 150,
-            height: 100,
+            width: 200,
+            height: 120,
             left: 0,
             top: 0,
             okCallBack: function(){ alert('callback for Ok Buton'); },
             cancelCallBack: function(){ alert('callback for Cancel Buton'); }
         });
-
     </script>
 </body>
 </html>
