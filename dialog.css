@@ -41,7 +41,8 @@
     box-shadow: 0px 0px 2px 1px rgba(103, 169, 255, 0.651);
 }
 
-.dialgo-overlay{
+#dialogOverlay{
+    display: none;
     position: fixed;
     top: 0px;
     left: 0px;
